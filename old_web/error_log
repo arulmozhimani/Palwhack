@@ -1,0 +1,2 @@
+[06-Mar-2014 13:15:12] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'root'@'localhost' (using password: NO) in /home/eashwari/public_html/pawhack.com/drive/DB.php on line 2
+[06-Mar-2014 13:18:32] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'root'@'localhost' (using password: NO) in /home/eashwari/public_html/pawhack.com/drive/DB.php on line 2
