@@ -14,9 +14,9 @@
   <div class="container-fluid" >
   <center>
   <div style="margin-top:50px">
-  <input type="text" placeholder="Name" class="th-plain-text-box">
-  <input type="text" placeholder="Email" class="th-plain-text-box">
-  <input type="text" placeholder="Mobile Number" class="th-plain-text-box"><br />
+  <input type="text" placeholder="Name" class="th-plain-text-box" id="name">
+  <input type="text" placeholder="Email" class="th-plain-text-box" id="email">
+  <input type="text" placeholder="Mobile Number" class="th-plain-text-box" id="mobile"><br />
   <input type="button" value="Signup" class="th-plain-btn" style="margin-top:10px" id="signup">
  
  </div>
@@ -25,7 +25,18 @@
 </div>
 <script type="text/javascript">
 $("#signup").click(function(){
-	$.post('http://palwhack.com/joingang.php',function(data){
+  var name = $("#name").val();
+  var email = $("#email").val();
+  var mobile = $("#mobile").val();
+  alert(name+" "+email+" "+mobile);
+  alert('http://palwhack.com/signup.php');
+	$.post('http://palwhack.com/signup.php',{
+  name:name,
+  email:email,
+  mobile:mobile
+  
+  },
+    function(data){
 		alert(data);
 		})
 	})
